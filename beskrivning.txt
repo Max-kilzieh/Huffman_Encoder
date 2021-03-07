@@ -1,0 +1,9 @@
+I Main.java hittar ni de metoderna för att koda/avkoda en string, en textfil samt att spara och läsa dem till en binär fil så det är lätt att jämföra storleken.
+Notera: implementationen läser och koda/avkoda "beskrivning.txt". 
+Huffman kod finns bit sätt alltså varje index Nr. motsvarar '1' 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Huffman kod skapade i följande steg:
+- räkna ut alla bokstäver frekvens i texten, här används Character värde som nyckel. Antal Character valde till 256 dvs hela ASCII tabell, det går ok med 128.
+- bilda alla en Node träd med roten frekvens är summen av lövnoder
+- sätta ihop alla en Node träd till ett enda träd med hjälp av PriorityQueue.
+- sparade Huffman kod för varje char i en HashMap, koden genererade med rekursivt. en vanlig för loop kunde vara bra alternative.
